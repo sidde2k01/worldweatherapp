@@ -6,15 +6,20 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: #f4f4f4;
 }
 
 .container {
   text-align: center;
   padding: 20px;
+  margin: 10px;
   border-radius: 8px;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.9
+  ); /* Added a slight transparency for a modern feel */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 label {
@@ -22,22 +27,33 @@ label {
 }
 
 select {
-  padding: 8px;
-}
-
-button {
-  padding: 8px 16px;
-  cursor: pointer;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
+  padding: 10px;
+  border: 1px solid #ddd;
   border-radius: 4px;
 }
 
+button {
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: blue;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
 button:hover {
-  background-color: #0056b3;
+  background-color: #add8e6;
+}
+#weatherInfo:empty {
+  background-color: white;
+  display: none;
 }
 
 #weatherInfo {
   margin-top: 20px;
+  background-color: lightblue;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
